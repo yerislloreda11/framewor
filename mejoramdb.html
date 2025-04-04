@@ -1,0 +1,146 @@
+
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bulma UI Creativa </title>
+  <link rel="icon" href="img/ib.png">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR FLOTANTE -->
+<nav class="navbar is-transparent is-fixed-top">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-bold is-size-4 has-text-white">BulmaCreativa</a>
+      <span class="navbar-burger burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+        <a class="navbar-item has-text-white">Inicio</a>
+        <a class="navbar-item has-text-white">Servicios</a>
+        <a class="navbar-item has-text-white">Contacto</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO ANIMADO -->
+<section class="hero is-fullheight is-bold">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1 animate_animated animate_fadeInDown">Transforma tu mundo digital</h1>
+      <p class="subtitle is-4 animate_animated animate_fadeInUp">Con diseños únicos, intuitivos y modernos</p>
+      <button class="button is-primary is-large animate_animated animatepulse animate_infinite">Comienza ahora 🚀</button>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN DE SERVICIOS ANIMADOS -->
+<section class="section">
+  <div class="container">
+    <h2 class="title has-text-centered is-2 mb-6">¿Qué ofrecemos?</h2>
+    <div class="columns is-multiline is-variable is-8">
+      <div class="column is-4">
+        <div class="card animate_animated animate_zoomIn">
+          <div class="card-content has-text-centered">
+            <i class="fas fa-code feature-icon"></i>
+            <h3 class="title is-4">Desarrollo Web</h3>
+            <p>Interfaces modernas, limpias y veloces para web y móvil.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card animate_animated animatezoomIn animate_delay-1s">
+          <div class="card-content has-text-centered">
+            <i class="fas fa-brain feature-icon"></i>
+            <h3 class="title is-4">UX/UI Inteligente</h3>
+            <p>Diseños centrados en el usuario con navegación fluida y accesible.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card animate_animated animatezoomIn animate_delay-2s">
+          <div class="card-content has-text-centered">
+            <i class="fas fa-rocket feature-icon"></i>
+            <h3 class="title is-4">Lanzamiento Rápido</h3>
+            <p>Proyectos listos en tiempo récord y con alta calidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARIO CON ESTILO -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <div class="card animate_animated animate_fadeInUp">
+          <div class="card-content">
+            <h2 class="title has-text-centered">¡Únete a nosotros!</h2>
+            <form>
+              <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Escribe tu nombre" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Correo electrónico</label>
+                <div class="control">
+                  <input class="input" type="email" placeholder="ejemplo@correo.com" required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control">
+                  <input class="input" type="password" placeholder="••••••••" required>
+                </div>
+              </div>
+              <div class="field has-text-centered">
+                <button class="button is-primary is-rounded is-medium">Registrarse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PIE DE PÁGINA ELEGANTE -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p class="is-size-5">©️ 2025 BulmaCreativa — Todos los derechos reservados</p>
+    <div class="social-icons mt-4">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Responsive navbar
+  document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('#navMenu');
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('is-active');
+    });
+  });
+</script>
+</body>
+</html>
